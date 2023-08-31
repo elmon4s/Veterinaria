@@ -42,13 +42,6 @@ CREATE TABLE atenciones
 )
 GO
 
-INSERT INTO tipo_mascotas VALUES ('perro')
-INSERT INTO tipo_mascotas VALUES ('gato')
-INSERT INTO tipo_mascotas VALUES ('araña')
-INSERT INTO tipo_mascotas VALUES ('iguana')
-
-GO
-
 CREATE PROCEDURE SP_OBTENER_CLIENTES
 AS
 BEGIN
@@ -81,3 +74,21 @@ AS
 BEGIN
 	INSERT INTO atenciones VALUES (@descripcion, @importe, @fecha_atencion, @cod_mascota)
 END
+GO
+SET DATEFORMAT DMY
+INSERT INTO clientes VALUES ('Tomás', 1)
+INSERT INTO clientes VALUES ('Maria', 0)
+GO
+INSERT INTO tipo_mascotas VALUES ('Perro')
+INSERT INTO tipo_mascotas VALUES ('Gato')
+INSERT INTO tipo_mascotas VALUES ('Araña')
+INSERT INTO tipo_mascotas VALUES ('Iguana')
+GO
+INSERT INTO mascotas VALUES ('Boby', 1, '20/05/2022', 1)
+INSERT INTO mascotas VALUES ('Pelusa', 2, '30/03/2021', 1)
+INSERT INTO mascotas VALUES ('Kosmo', 3, '10/05/2022', 2)
+INSERT INTO mascotas VALUES ('Cactus', 4, '02/06/2023', 2)
+GO
+INSERT INTO atenciones VALUES ('Vacunación Completa', 600,'29/12/2022', 1)
+INSERT INTO atenciones VALUES ('Revisión', 900,'15/08/2023', 4)
+INSERT INTO atenciones VALUES ('Castración', 200,'04/10/2022', 2)

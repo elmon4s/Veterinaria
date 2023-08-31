@@ -38,7 +38,7 @@ namespace Veterinaria.Dominio
         }
         public string SexoString()
         {
-            return Sexo ? "Femenino" : "Masculino";
+            return Sexo ? "Masculino" : "Femenino";
         }
         public override string ToString()
         {

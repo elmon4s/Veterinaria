@@ -81,7 +81,7 @@
             this.dgvAtenciones.AllowUserToDeleteRows = false;
             this.dgvAtenciones.AllowUserToResizeColumns = false;
             this.dgvAtenciones.AllowUserToResizeRows = false;
-            this.dgvAtenciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvAtenciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAtenciones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Codigo,
             this.Descripcion,

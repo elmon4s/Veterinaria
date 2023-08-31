@@ -31,6 +31,7 @@ namespace Veterinaria
         private void CargarClientes()
         {
             clientes.Clear();
+            dgvAtenciones.Rows.Clear();
             DataTable tabla = AccesoDatos.ObetenerClientes();
             foreach (DataRow fila in tabla.Rows)
             {
@@ -62,7 +63,7 @@ namespace Veterinaria
                 {
                     a.Codigo.ToString(),
                     a.Descripcion.ToString(),
-                    a.FechaAtencion.ToString(),
+                    a.FechaAtencion.ToString("dd/MM/yyyy"),
                     a.Importe.ToString(),
                     "Eliminar"
                 });
