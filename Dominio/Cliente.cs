@@ -31,7 +31,19 @@ namespace Veterinaria.Dominio
         {
             mascotas.Add(mascota);
         }
+        public void ModificarCodMascota(int codMascota, int nuevoCodMascota)
+        {
 
+            foreach (var mascota in mascotas)
+            {
+                if (mascota.Codigo == codMascota)
+                {
+                    mascota.Codigo = nuevoCodMascota; 
+                    break;
+                }
+            }
+
+        }
         public void AgregarMascotas(List<Mascota> listaMascotas)
         {
             mascotas.AddRange(listaMascotas);

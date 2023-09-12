@@ -8,11 +8,17 @@ namespace Veterinaria.Dominio
 {
     public class TipoMascota
     {
+        public int Codigo { get; set; }
         public string Nombre { get; set; }
 
-        public TipoMascota(string nombre)
+        public TipoMascota(int cod, string nombre)
         {
+            this.Codigo = cod;
             this.Nombre = nombre;
+        }
+        public override string ToString()
+        {
+            return $"{this.Codigo} - {this.Nombre}";
         }
     }
 }

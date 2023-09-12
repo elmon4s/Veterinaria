@@ -46,32 +46,106 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdmDatos\AccesoDatos.cs" />
+    <Compile Include="AdmDatos\DbHelper.cs" />
     <Compile Include="AdmDatos\Parametro.cs" />
     <Compile Include="Dominio\Atencion.cs" />
     <Compile Include="Dominio\Cliente.cs" />
     <Compile Include="Dominio\Mascota.cs" />
     <Compile Include="Dominio\TipoMascota.cs" />
-    <Compile Include="Vistas\FrmClientes.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilidades\Formulario.cs" />
+    <Compile Include="Vistas\Atenciones\FrmAtenciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\FrmClientes.Designer.cs">
-      <DependentUpon>FrmClientes.cs</DependentUpon>
+    <Compile Include="Vistas\Atenciones\FrmAtenciones.Designer.cs">
+      <DependentUpon>FrmAtenciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Atenciones\FrmModificarAtencion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Atenciones\FrmModificarAtencion.Designer.cs">
+      <DependentUpon>FrmModificarAtencion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Clientes\FrmNuevoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Clientes\FrmNuevoCliente.Designer.cs">
+      <DependentUpon>FrmNuevoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Atenciones\FrmMascotaAtenciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Atenciones\FrmMascotaAtenciones.Designer.cs">
+      <DependentUpon>FrmMascotaAtenciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Vistas\FrmClientes.resx">
+    <Compile Include="Vistas\Clientes\FrmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Clientes\FrmClientes.Designer.cs">
       <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Mascotas\FrmMascotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Mascotas\FrmMascotas.Designer.cs">
+      <DependentUpon>FrmMascotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Mascotas\FrmNuevaMascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Mascotas\FrmNuevaMascota.Designer.cs">
+      <DependentUpon>FrmNuevaMascota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Mascotas\FrmNuevoTipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Mascotas\FrmNuevoTipo.Designer.cs">
+      <DependentUpon>FrmNuevoTipo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vistas\Atenciones\FrmAtenciones.resx">
+      <DependentUpon>FrmAtenciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Atenciones\FrmModificarAtencion.resx">
+      <DependentUpon>FrmModificarAtencion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Clientes\FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Atenciones\FrmMascotaAtenciones.resx">
+      <DependentUpon>FrmMascotaAtenciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Vistas\Clientes\FrmNuevoCliente.resx">
+      <DependentUpon>FrmNuevoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Mascotas\FrmMascotas.resx">
+      <DependentUpon>FrmMascotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Mascotas\FrmNuevaMascota.resx">
+      <DependentUpon>FrmNuevaMascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Mascotas\FrmNuevoTipo.resx">
+      <DependentUpon>FrmNuevoTipo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -85,6 +159,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\nuevo_cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nueva_mascota.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ver_atenciones.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

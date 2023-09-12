@@ -12,6 +12,7 @@ namespace Veterinaria.Dominio
         public List<Atencion> Atenciones = new List<Atencion>();
         public string Nombre { get; set; }
         public int Edad { get; set; }
+        public DateTime FechaNacimiento { get; set; }
         public TipoMascota TipoMascota { get; set; }
         public int Codigo { get; set; }
 
@@ -21,6 +22,18 @@ namespace Veterinaria.Dominio
             this.Edad = edad;
             this.TipoMascota = tipo;
             this.Codigo = codigo;
+        }
+        public Mascota(string nombre, DateTime fechaNacimiento, TipoMascota tipo, int codigo)
+        {
+            this.Nombre = nombre;
+            this.FechaNacimiento = fechaNacimiento;
+            this.TipoMascota = tipo;
+            this.Codigo = codigo;
+
+            DateTime tiempoInicio = new DateTime(1, 1, 1);
+            TimeSpan intervaloTiempo = DateTime.Now - fechaNacimiento;
+            this.Edad = (tiempoInicio + intervaloTiempo).Year - 1;
+
         }
 
         public override string ToString()
