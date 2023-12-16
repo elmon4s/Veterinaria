@@ -2,7 +2,6 @@ D:\Materias\1er Año\Programación II\Veterinaria\bin\Debug\Veterinaria.exe.conf
 D:\Materias\1er Año\Programación II\Veterinaria\bin\Debug\Veterinaria.exe
 D:\Materias\1er Año\Programación II\Veterinaria\bin\Debug\Veterinaria.pdb
 D:\Materias\1er Año\Programación II\Veterinaria\obj\Debug\Veterinaria.csproj.AssemblyReference.cache
-D:\Materias\1er Año\Programación II\Veterinaria\obj\Debug\Veterinaria.csproj.SuggestedBindingRedirects.cache
 D:\Materias\1er Año\Programación II\Veterinaria\obj\Debug\Veterinaria.Properties.Resources.resources
 D:\Materias\1er Año\Programación II\Veterinaria\obj\Debug\Veterinaria.csproj.GenerateResource.cache
 D:\Materias\1er Año\Programación II\Veterinaria\obj\Debug\Veterinaria.csproj.CoreCompileInputs.cache
@@ -17,3 +16,9 @@ D:\Materias\1er Año\Programación II\Veterinaria\obj\Debug\Veterinaria.Vistas.F
 D:\Materias\1er Año\Programación II\Veterinaria\obj\Debug\Veterinaria.Vistas.Atenciones.FrmAtenciones.resources
 D:\Materias\1er Año\Programación II\Veterinaria\obj\Debug\Veterinaria.FrmMascotaAtenciones.resources
 D:\Materias\1er Año\Programación II\Veterinaria\obj\Debug\Veterinaria.Vistas.Atenciones.FrmModificarAtencion.resources
+D:\Materias\1er Año\Programación II\Veterinaria\bin\Debug\en\Veterinaria.resources.dll
+D:\Materias\1er Año\Programación II\Veterinaria\bin\Debug\es\Veterinaria.resources.dll
+D:\Materias\1er Año\Programación II\Veterinaria\obj\Debug\Veterinaria.Vistas.FrmPrincipal.en.resources
+D:\Materias\1er Año\Programación II\Veterinaria\obj\Debug\Veterinaria.Vistas.FrmPrincipal.es.resources
+D:\Materias\1er Año\Programación II\Veterinaria\obj\Debug\en\Veterinaria.resources.dll
+D:\Materias\1er Año\Programación II\Veterinaria\obj\Debug\es\Veterinaria.resources.dll

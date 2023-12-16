@@ -7,7 +7,6 @@ using Veterinaria.Vistas;
 
 namespace Veterinaria
 {
-    //Monasterio Mateo 404888
     internal static class Program
     {
         /// <summary>
@@ -16,10 +15,9 @@ namespace Veterinaria
         [STAThread]
         static void Main()
         {
-            bool MostrarMennsajeInicio = true;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPrincipal(MostrarMennsajeInicio));
+            Application.Run(new FrmMain());
         }
     }
 }
